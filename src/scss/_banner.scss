@@ -1,0 +1,65 @@
+.home-banner {
+    width: 100%;
+    margin-top: 10px;
+    min-height: 410px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 180px 180px;
+    grid-gap: 18px;
+    .box-banner {
+        cursor: pointer;
+        p {
+            font-size: 20;
+            font-weight: 600;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .title1 {
+            color: $hover;
+        }
+        &-left {
+            grid-column: 2/2;
+            border: 1px solid #d7d7d7;
+        }
+        &-right {
+            grid-column: 2/2;
+        }
+        .box-bottom {
+            position: relative;
+        }
+        .box1 {
+            position: absolute;
+            width: 265px;
+        }
+        .box2 {
+            position: absolute;
+            right: 196px;
+            width: 265px;
+        }
+    }
+}
+
+.home-marketing-bottom {
+    margin-top: 20px;
+    height: 65px;
+    background-color: $hover;
+    display: grid;
+    line-height: 1.7;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    &-box:nth-child(1) {
+        margin-left: 20px;
+    }
+    &-box {
+        color: #fff;
+        a {
+            font-size: 20px;
+            color: #fff;
+            font-weight: 600;
+        }
+        span {
+            cursor: pointer;
+        }
+    }
+}

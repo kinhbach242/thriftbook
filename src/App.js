@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./scss/main.scss";
+import { BrowserRouter, Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Header from "./components/Header/Header";
+import Products from "./pages/Products";
+import Footer from "./components/footer/Footer";
+import Login from "./pages/Login";
+import CatbooksDetail from "./pages/CatbooksDetail";
+import Cart from "./components/Cart";
+import BookDetail from "./pages/BookDetail";
+import Unsplash from "./pages/Unsplash";
+import Task from "./pages/Task";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Cart />
+      <div className="wrapper">
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/sanpham/" exact component={Products} />
+          <Route path="/login/" component={Login} />
+          <Route path="/theloai/:id" component={CatbooksDetail} />
+          <Route path="/sanpham/:id" component={BookDetail} />
+          <Route path="/unsplash" component={Unsplash} />
+          <Route path="/task" component={Task} />
+        </Switch>
+      </div>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

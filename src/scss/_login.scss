@@ -1,0 +1,23 @@
+.login {
+    .button-login {
+        padding-left: 80px;
+    }
+    margin-top: 50px;
+    padding-bottom: 200px;
+    .btn-logout {
+        margin-top: 20px;
+        text-transform: capitalize;
+        border: none;
+        background: $bg-button;
+        color: #fff;
+        padding: 5px;
+        font-weight: 500;
+        font-size: 14px;
+        outline: none;
+        &:hover {
+            background: $hover2;
+            transition: 0.2s;
+            border-radius: 5px;
+        }
+    }
+}

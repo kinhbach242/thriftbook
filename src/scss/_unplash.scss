@@ -1,0 +1,42 @@
+.unsplash {
+    margin-bottom: 200px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.unsplash_right_title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.unsplash_left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.photo {
+    img {
+        width: 120px;
+        height: 150px;
+        object-fit: cover;
+    }
+}
+
+.search {
+    text-transform: capitalize;
+    border: none;
+    background: $bg-button;
+    color: #fff;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    outline: none;
+    &:hover {
+        background: $hover2;
+        color: #fff;
+        transition: 0.2s;
+        border-radius: 5px;
+    }
+}

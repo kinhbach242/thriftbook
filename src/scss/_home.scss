@@ -1,0 +1,24 @@
+.home {
+    margin-bottom: 100px;
+    &-marketing {
+        min-width: 100%;
+        min-height: 36;
+        background: #EFEFEF;
+        text-align: center;
+        line-height: 2;
+        color: $hover2;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .titleHome {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        color: $hover2;
+        cursor: pointer;
+        text-transform: capitalize;
+        border-bottom: 4px solid $hover2;
+    }
+}
