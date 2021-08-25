@@ -4,7 +4,7 @@ import Item from "../components/item/Item";
 const Home = () => {
   const [items, setItems] = useState([]);
   useEffect(() => {
-    fetch("https://thriftbook.herokuapp.com/api/books")
+    fetch("http://localhost:3000/books")
       .then((res) => res.json())
       .then((data) => {
         setItems(data);
