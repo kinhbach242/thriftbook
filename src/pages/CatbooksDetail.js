@@ -3,7 +3,7 @@ import Item from "../components/item/Item";
 const CatbooksDetail = ({ match }) => {
   const [cat, setCat] = useState({});
   const [listBooks, setListBooks] = useState([]);
-  const url = "http://localhost:3000/";
+  const url = "https://thriftbook.herokuapp.com/api";
   const { id } = match.params;
   useEffect(() => {
     const getListBook = async () => {

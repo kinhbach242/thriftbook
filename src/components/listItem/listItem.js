@@ -3,7 +3,7 @@ import Item from "../item/Item";
 function ListItem() {
   const [items, setItems] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/books")
+    fetch("https://thriftbook.herokuapp.com/api/books")
       .then((res) => res.json())
       .then((data) => {
         setItems(data);
