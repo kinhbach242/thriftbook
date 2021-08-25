@@ -6,7 +6,9 @@ const BookDetail = ({ match }) => {
   const [book, setBook] = useState({});
   useEffect(() => {
     const getBookDetail = async () => {
-      const res = await fetch(`http://localhost:3000/books/${match.params.id}`);
+      const res = await fetch(
+        `https://thriftbook.herokuapp.com/api/${match.params.id}`
+      );
       const data = await res.json();
       setBook(data);
     };

@@ -6,7 +6,7 @@ const Header = () => {
   const { cartItems, showHideCart } = useContext(CartContext);
   const [catalogs, setCatalogs] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/catalog")
+    fetch("https://thriftbook.herokuapp.com/api/catalog")
       .then((res) => res.json())
       .then((data) => {
         setCatalogs(data);
